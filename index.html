@@ -1,34 +1,149 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Muhammed Baha Karadağlı | Geliştirici Portföyü</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammed Baha Karadağlı | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto Mono', monospace;
+      background-color: #0d0d0d;
+      color: #39FF14;
+    }
+    header, footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1a1a1a;
+    }
+    h1, h2, h3 {
+      color: #39FF14;
+    }
+    a {
+      color: #39FF14;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 2rem;
+    }
+
+    /* Project section specific */
+    .projects-scroll-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+
+    .project-card {
+      min-width: 300px;
+      background-color: #1a1a1a;
+      border: 1px solid #39FF14;
+      padding: 1rem;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+    }
+
+    .info-box {
+      background-color: #1a1a1a;
+      border-left: 4px solid #39FF14;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Scrollbar styling */
+    ::-webkit-scrollbar {
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1a1a1a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #39FF14;
+      border-radius: 4px;
+    }
+
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Muhammed Baha Karadağlı</h1>
-    <p>Computer Engineer | Software Developer | Data Enthusiast</p>
-    <a href="https://www.linkedin.com/in/muhammedbahakaradagli" target="_blank">LinkedIn Profilim</a>
-  </header>
 
-  <section id="about">
-    <h2>Hakkımda</h2>
-    <p>Bilgisayar mühendisliği mezunuyum. Web geliştirme, veri bilimi ve yapay zeka konularında projeler geliştiriyorum.</p>
-  </section>
+<header>
+  <h1>Muhammed Baha Karadağlı</h1>
+  <p>Software Engineer | Game Developer Tutor | Full-Stack Developer</p>
+  <p><a href="mailto:karadaglim@mef.edu.tr">karadaglim@mef.edu.tr</a> |
+     <a href="https://www.linkedin.com/in/muhammed-baha-karada%C4%9Fl%C4%B1-a42698218/" target="_blank">LinkedIn</a></p>
+</header>
 
-  <section id="projects">
-    <h2>Projelerim</h2>
-    <div class="project">
-      <h3>Proje 1 - Akıllı Stok Takip Sistemi</h3>
-      <p>React ve Firebase ile geliştirildi. Fabrika üretim süreçlerinde stok yönetimini otomatize eder.</p>
-      <a href="#">GitHub'da Gör</a>
+<section>
+  <div class="info-box">
+    <h2>Education</h2>
+    <p><strong>MEF University</strong> – Computer Engineering (Sep 2021 - Present)</p>
+    <p>100% English Education, 50% Scholarship</p>
+  </div>
+
+  <div class="info-box">
+    <h2>Experience</h2>
+    <p><strong>Cross4Cloud Inc.</strong> – Software Engineer (Jul 2024 – Feb 2025)</p>
+    <p><strong>Kodland</strong> – Game Developer Tutor (Jun 2023 – May 2024)</p>
+    <p><strong>FGV Inc.</strong> – Software Engineer (Mar 2023 – Feb 2025)</p>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="projects-scroll-container">
+    <div class="project-card">
+      <h3>Up Royale</h3>
+      <p>Mobile game where players compete to climb higher with a leaderboard system.</p>
     </div>
-    <!-- Yeni projeler buraya -->
-  </section>
+    <div class="project-card">
+      <h3>Bank Account App</h3>
+      <p>Track income/expenses based on target profit.</p>
+      <a href="https://github.com/Bahakaradagli/Bank_Account_System_App" target="_blank">GitHub</a>
+    </div>
+    <div class="project-card">
+      <h3>Employee Management System</h3>
+      <p>HR tool built in C for admin tasks, salary edits, vacation requests.</p>
+      <a href="https://github.com/Bahakaradagli/EmployeeDetectSystem" target="_blank">GitHub</a>
+    </div>
+    <div class="project-card">
+      <h3>Path Finder System</h3>
+      <p>DFS/BFS in Java to find valid paths between cities.</p>
+      <a href="https://github.com/Bahakaradagli/DFS-and-BFS-Path-Finder" target="_blank">GitHub</a>
+    </div>
+    <div class="project-card">
+      <h3>The Hallways</h3>
+      <p>2-year Unity project on Steam with database, UI/UX, and multiplayer features.</p>
+      <a href="https://store.steampowered.com/app/2511220/The_Hallways/" target="_blank">Steam</a>
+    </div>
+    <div class="project-card">
+      <h3>InternConnect</h3>
+      <p>Firebase-powered job networking app for students and companies.</p>
+      <a href="https://github.com/Bahakaradagli/InternConnect" target="_blank">GitHub</a>
+    </div>
+    <div class="project-card">
+      <h3>CatchThat</h3>
+      <p>Snapchat-inspired app to share temporary messages and media.</p>
+    </div>
+    <div class="project-card">
+      <h3>That’s FIFA</h3>
+      <p>Filter FIFA career mode players by stats and traits.</p>
+      <a href="https://github.com/Bahakaradagli/ThatsFifa" target="_blank">GitHub</a>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2025 Muhammed Baha Karadağlı</p>
-  </footer>
+<footer>
+  <p>© 2025 Muhammed Baha Karadağlı</p>
+</footer>
+
 </body>
 </html>
